@@ -56,6 +56,20 @@
   opacity: 1;
 }
 
+.topbar {
+  height: 45px;
+}
+
+.text-hero {
+  max-width: 900px;
+}
+
+.frame {
+  width: 560;
+  height: 315;
+  border: 0;
+}
+
 /*** Heading ***/
 h1,
 h2,
