@@ -20,9 +20,13 @@ class TopBarController extends Controller
     
     public function store(Request $request) {
         $validator = Validator::make($request->all(), [
-            "name" => "required|string",
-            "icon" => "required|string",
-            "link" => "required|string"
+            "alamat" => "required|string",
+            "no_telp" => "required|string",
+            "email" => "required|string",
+            "github" => "required|string",
+            "facebook" => "required|string",
+            "instagram" => "required|string",
+            "youtube" => "required|string"
         ]);
 
         if($validator->fails()) {
@@ -51,9 +55,13 @@ class TopBarController extends Controller
 
     public function update(Request $request, $id) {
         $validator = Validator::make($request->all(), [
-            "name" => "string",
-            "icon" => "string",
-            "link" => "string"
+            "alamat" => "string",
+            "no_telp" => "string",
+            "email" => "string",
+            "github" => "string",
+            "facebook" => "string",
+            "instagram" => "string",
+            "youtube" => "string",
         ]);
 
         if($validator->fails()) {

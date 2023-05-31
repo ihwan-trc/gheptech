@@ -13,15 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('top_bars', function (Blueprint $table) {
+        Schema::create('heroes', function (Blueprint $table) {
             $table->id();
-            $table->string("alamat");
-            $table->string("no_telp");
-            $table->string("email");
-            $table->string("github");
-            $table->string("facebook");
-            $table->string("instagram");
-            $table->string("youtube");
+            $table->string("title");
+            $table->string("description");
+            $table->string("image");
             $table->timestamps();
         });
     }
@@ -33,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('top_bars');
+        Schema::dropIfExists('heros');
     }
 };

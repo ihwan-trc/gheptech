@@ -64,10 +64,44 @@
   max-width: 900px;
 }
 
+.content-search {
+  background: rgb(9, 30, 62, 0.7);
+}
+
 .frame {
   width: 560;
   height: 315;
   border: 0;
+}
+
+.home-contact {
+  width: 60px;
+  height: 60px;
+}
+
+.home-about {
+  object-fit: cover;
+  min-height: 500px;
+}
+
+.img-service {
+  object-fit: cover;
+}
+
+.section-title {
+  max-width: 600px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.footer {
+  background: #061429;
+}
+
+.footer-copyright {
+  height: 75px;
 }
 
 /*** Heading ***/
